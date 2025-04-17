@@ -320,6 +320,8 @@ class AppBarPlacesAutoCompleteTextFieldState
       child: TextField(
         controller: state._queryTextController,
         autofocus: true,
+        enableSuggestions: false,
+        autocorrect: false,
         style: widget.textStyle ?? _defaultStyle(),
         decoration:
             widget.textDecoration ?? _defaultDecoration(state.widget.hint),
